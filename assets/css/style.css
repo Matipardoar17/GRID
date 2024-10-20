@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'afacad flux', sans-serif;
+}
+
+
+.header{
+  grid-area: titulo;
+  
+  background-color: rgb(34, 34, 128);
+  color: #ffff;
+  text-align: center;
+  padding-top: 15px;
+  display: flex;
+}
+.header h1{
+  width: 70%;
+}
+.header h2{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.fa-solid{
+  padding-top: 30px;
+}
+  
+.aside{
+  grid-area: navegación;
+  
+  background-color: rgb(136, 47, 47);
+  color: #ffff;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.aside h3{
+  padding-top: 50px;
+  cursor: pointer;
+}
+  
+
+.section{
+  grid-area: productos;
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,50%);
+  padding: 40px;
+  background-color: rgb(219, 187, 165);
+  gap: 30px;
+}
+  
+  
+
+
+.footer{
+  grid-area: footer;
+  
+  color: white;
+  text-align: center;
+  padding-top:10px ;
+  background-color: rgb(34, 34, 128);
+}
+
+.main{
+  display: grid;
+  grid-template-areas: 
+     'titulo titulo titulo'
+     'navegación productos productos'
+     'footer footer footer'
+     ;
+  grid-template-columns: 300px auto auto;  
+  grid-template-rows: 100px calc(100vh - 100px - 40px) 40px; 
+}
+
+.section img{
+  width: 140px;
+  
+}
+  
+  
+.section p{
+  
+  color: #080808;
+  padding: 10px;
+  font-size: 17px;
+
+}
+.section button{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(119, 30, 30);
+  color: #ffff;
+  font-size: large;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(58, 5, 5);
+}
+  
+  
